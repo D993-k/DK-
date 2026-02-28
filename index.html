@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Your Website</title>
+    <!-- Placeholders to be replaced -->
+</head>
+<body>
+    <h1>Welcome to TradingView Tracker</h1>
+    <div id="tradingview_tracker">
+        <!-- Placeholder for TradingView Market Tracker -->
+        <div class="tradingview-widget-container">
+            <div id="tradingview_4a2fc"></div>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": 980,
+                    "height": 610,
+                    "symbol": "NASDAQ:AAPL",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3fa",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_4a2fc"
+                });
+            </script>
+        </div>
+        <!-- Placeholder for Tickers -->
+        <div class="tradingview-widget-container">
+            <div id="tradingview_tickers"></div>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": 980,
+                    "height": 100,
+                    "symbols": [
+                        ["NASDAQ:AAPL", "Apple Inc"],
+                        ["NASDAQ:GOOGL", "Alphabet Inc"],
+                        ["NASDAQ:AMZN", "Amazon.com, Inc."],
+                        ["NASDAQ:MSFT", "Microsoft Corporation"]
+                    ],
+                    "show_symbols": true,
+                    "show_market_state": true,
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en",
+                    "container_id": "tradingview_tickers"
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
